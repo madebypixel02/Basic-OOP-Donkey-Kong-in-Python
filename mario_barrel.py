@@ -125,10 +125,18 @@ class Game:
         self.ladders[name] = obj
         
         ##################
-        
-        self.highscores = []
-        for i in range(5):
-            self.highscores.append(0)
+        self.scores_path = 'highscores.txt'
+        try:
+            with open(self.scores_path, "r") as file:
+                self.highscores = eval(file.readline())
+            
+        except:
+            self.highscores =  []
+            for i in range(5):
+                self.highscores.append(0)
+            
+            with open(self.scores_path, "w") as file:
+                file.write(str(self.highscores))
         ##################
         """
         We thought at first that ladders could be iterably generated, but soon
@@ -321,13 +329,16 @@ class Game:
             if self.mario.score != 0:
                 self.highscores.append(self.mario.score)
                 self.bubbleSort(self.highscores)
-                print(self.highscores)
                 self.mario.score = 0
                 self.highscores.pop()
 
         if pyxel.btnp(pyxel.KEY_Q):
+            with open(self.scores_path, "w") as file:
+                file.write(str(self.highscores))
             pyxel.quit()
         if pyxel.btnp(pyxel.KEY_R):
+            with open(self.scores_path, "w") as file:
+                file.write(str(self.highscores))
             self.reset()
 
     def draw(self):
