@@ -149,7 +149,7 @@ class Game:
             obj = classes.Ladder(x,y)
             self.ladders[name] = obj
         """
-        pyxel.init(WIDTH, HEIGHT, caption=CAPTION)
+        pyxel.init(WIDTH, HEIGHT)
         pyxel.load("opjects.pyxres")
         pyxel.playm(0, loop=True)
 

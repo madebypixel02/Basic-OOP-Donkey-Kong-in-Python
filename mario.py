@@ -38,24 +38,24 @@ class Mario:
 
     def platMove(self): #Allows Mario to move sideways only while onPlat
         if self.__posY > 200:
-            if pyxel.btn(pyxel.KEY_LEFT) or pyxel.btn(pyxel.GAMEPAD_1_LEFT):
+            if pyxel.btn(pyxel.KEY_LEFT) or pyxel.btn(pyxel.GAMEPAD1_AXIS_LEFTX):
                 self.__posX = max(self.__posX - 1, 10)
                 self.__direct = 'L'
-            if pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.GAMEPAD_1_RIGHT):
+            if pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.GAMEPAD1_AXIS_RIGHTX):
                 self.__posX = min(self.__posX + 1, pyxel.width - 15)
                 self.__direct = 'R'
         elif self.__posY < 100:
-            if pyxel.btn(pyxel.KEY_LEFT) or pyxel.btn(pyxel.GAMEPAD_1_LEFT):
+            if pyxel.btn(pyxel.KEY_LEFT) or pyxel.btn(pyxel.GAMEPAD1_AXIS_LEFTX):
                 self.__posX = max(self.__posX - 1, 46)
                 self.__direct = 'L'
-            if pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.GAMEPAD_1_RIGHT):
+            if pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.GAMEPAD1_AXIS_RIGHTX):
                 self.__posX = min(self.__posX + 1, pyxel.width - 15)
                 self.__direct = 'R'
         else:
-            if pyxel.btn(pyxel.KEY_LEFT) or pyxel.btn(pyxel.GAMEPAD_1_LEFT):
+            if pyxel.btn(pyxel.KEY_LEFT) or pyxel.btn(pyxel.GAMEPAD1_AXIS_LEFTX):
                 self.__posX = max(self.__posX - 1, 0)
                 self.__direct = 'L'
-            if pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.GAMEPAD_1_RIGHT):
+            if pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.GAMEPAD1_AXIS_RIGHTX):
                 self.__posX = min(self.__posX + 1, pyxel.width - 16)
                 self.__direct = 'R'
     
