@@ -4,7 +4,8 @@
 
 ## Gameplay
 
-![mario](https://user-images.githubusercontent.com/40824677/144234452-1523a412-b22f-4728-9b84-c6ff185cc903.gif)
+![DonkeyKong](https://user-images.githubusercontent.com/40824677/157089150-cad9f704-2bc2-40d3-85ed-03d00895d1a9.gif)
+
 
 ## Summary
 
