@@ -4,7 +4,9 @@
 
 ## Gameplay
 
-![DonkeyKong](https://user-images.githubusercontent.com/40824677/157089150-cad9f704-2bc2-40d3-85ed-03d00895d1a9.gif)
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/40824677/157089150-cad9f704-2bc2-40d3-85ed-03d00895d1a9.gif />
+</p>
 
 
 ## Summary
