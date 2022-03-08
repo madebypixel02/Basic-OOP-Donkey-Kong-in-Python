@@ -1,4 +1,4 @@
-# Basic OOP Donkey Kong in Python
+# Basic OOP Donkey Kong in Python | uc3m
 
 *The classic Donkey Kong Game 🐵*
 
